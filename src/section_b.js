@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
+import FormHeader from './components/FormHeader';
 import './App.css';
-import logo from './assets/logo.png';
 
 const communicationQuestions = [
   {
@@ -132,51 +132,15 @@ const CommunicationForm = () => {
     transition: "all 0.3s ease",
   };
 
-  const headerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: '2rem',
-    padding: '1rem',
-    borderBottom: '1px solid rgba(0, 0, 0, 0.1)'
-  };
-
-  const adminInfoStyle = {
-    textAlign: 'left',
-    color: '#4F46E5',
-    fontSize: '0.9rem',
-    fontWeight: '500'
-  };
-
-  const logoStyle = {
-    width: '120px',
-    height: 'auto'
-  };
-
   return (
     <div style={formStyle}>
       <div style={cardStyle}>
-        <div style={headerStyle}>
-          <div style={adminInfoStyle}>
-            <p className="mb-1">Administered by: Dr John Doe</p>
-            <p className="mb-0">Date: {new Date().toLocaleDateString('en-GB', {
-              day: '2-digit',
-              month: 'short',
-              year: 'numeric'
-            }).toUpperCase()}</p>
-          </div>
-          <img 
-            src='./assets/logo.png'
-            alt="Logo" 
-            style={logoStyle}
-          />
-        </div>
-
+        <FormHeader />
+        
         <div className="text-center mb-5">
-          
-          <h2 className="fw-bold mb-3" style={{ color: "#4F46E5" }}>SECTION B </h2>
+          <h2 className="fw-bold mb-3" style={{ color: "#4F46E5" }}>SECTION B</h2>
           <p className="text-muted" style={{ fontSize: "1.1rem" }}>
-          Complete this section (1-5) based on responses from section A and further history taking (6-12) 
+            Complete this section (1-5) based on responses from section A and further history taking (6-12)
           </p>
         </div>
 
