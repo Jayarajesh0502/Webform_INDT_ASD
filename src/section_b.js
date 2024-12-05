@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import FormHeader from './components/FormHeader';
+
 import './App.css';
 
 const communicationQuestions = [
