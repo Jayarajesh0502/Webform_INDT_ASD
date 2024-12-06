@@ -135,7 +135,7 @@ const CommunicationForm = () => {
   return (
     <div style={formStyle}>
       <div style={cardStyle}>
-        <FormHeader />
+        
         
         <div className="text-center mb-5">
           <h2 className="fw-bold mb-3" style={{ color: "#4F46E5" }}>SECTION B</h2>

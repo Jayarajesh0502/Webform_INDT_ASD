@@ -17,7 +17,7 @@ const LogIn = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(135deg, #6C63FF, #FF6584)",
+        background: "linear-gradient(135deg, #0000FF, #1E90FF)",
       }}
     >
       <div

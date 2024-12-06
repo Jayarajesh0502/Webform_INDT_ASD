@@ -10,9 +10,13 @@ const PersonalInformation = () => {
   };
 
   const inputStyle = {
-    color: "#ffffff",
-    border: "1px solid rgba(255, 255, 255, 0.3)",
-    backgroundColor: "rgba(255, 255, 255, 0.05)",
+    width: "100%",
+    padding: "12px",
+    borderRadius: "8px",
+    border: "1px solid #ddd",
+    fontSize: "14px",
+    backgroundColor: "#f9f9f9",
+    color: "#333",
   };
 
   const labelStyle = {
@@ -29,7 +33,7 @@ const PersonalInformation = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(135deg, #6C63FF, #FF6584)",
+        background: "linear-gradient(135deg, #0000FF, #1E90FF)",
         padding: "2rem",
         position: "fixed",
         top: 0,
@@ -43,7 +47,7 @@ const PersonalInformation = () => {
         style={{
           width: "100%",
           maxWidth: "600px",
-          backgroundColor: "rgba(255, 255, 255, 0.1)",
+          backgroundColor: "rgba(255, 255, 255, 0.2)",
           backdropFilter: "blur(10px)",
           borderRadius: "20px",
           boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
@@ -57,7 +61,7 @@ const PersonalInformation = () => {
             Personal Information
           </h2>
           <p style={{ color: "rgba(255, 255, 255, 0.7)" }}>
-            Please enter the child's details below
+          Please enter Child Details
           </p>
         </div>
 

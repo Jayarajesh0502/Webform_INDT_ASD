@@ -68,7 +68,7 @@ const RestrictedInterestsForm = () => {
   };
 
   const formStyle = {
-    background: "linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)",
+    background: "linear-gradient(135deg, #0000FF, #1E90FF)",
     minHeight: "100vh",
     padding: "3rem 1rem",
   };
@@ -104,11 +104,41 @@ const RestrictedInterestsForm = () => {
     transition: "all 0.3s ease",
   };
 
+  const headerStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: "2rem",
+    padding: "0 1rem",
+    color: "#4F46E5", // Blue color
+  };
+
+  const logoStyle = {
+    height: "40px", // Adjust the size as needed
+  };
+
   return (
     <div style={formStyle}>
       <div style={cardStyle}>
+        <div style={headerStyle}>
+          <div>
+            <p style={{ margin: 0 }}>
+              Administered by: Dr John Doe
+            </p>
+            <p style={{ margin: 0 }}>
+              Date: DD-MON-YYYY
+            </p>
+          </div>
+          <div>
+            <img
+              src="src/assets/logo.png" // Replace with the actual path to your logo
+              alt="SM for Practitioners"
+              style={logoStyle}
+            />
+          </div>
+        </div>
+
         <div className="text-center mb-5">
-          
           <h3 className="fw-bold mb-3" style={{ color: "#4F46E5" }}>Restricted Interests Assessment</h3>
           <p className="text-muted" style={{ fontSize: "1.1rem" }}>
             Please evaluate the child's behavioral patterns and interests.
